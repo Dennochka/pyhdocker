@@ -1,0 +1,7 @@
+services:
+        node-app-server:
+                image: ghcr.io/dennochka/pyhdocker/node-app:latest
+                container_name: node
+                restart: unless-stopped
+                ports:
+                        - 5050:5050
