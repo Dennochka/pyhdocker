@@ -29,3 +29,10 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+      -
+        name: build Docker
+        run: docker build -t ghcr.io/dennochka/pyhdocker/node-app:latest .
+      -
+        name: Push to Git
+        run: docker push ghcr.io/dennochka/pyhdocker/node-app:lates 
+        
