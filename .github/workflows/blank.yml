@@ -34,5 +34,5 @@ jobs:
         run: docker build -t ghcr.io/dennochka/pyhdocker/node-app:latest .
       -
         name: Push to Git
-        run: docker push ghcr.io/dennochka/pyhdocker/node-app:lates 
+        run: docker push ghcr.io/dennochka/pyhdocker/node-app:latest
         
